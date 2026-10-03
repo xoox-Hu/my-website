@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>小明工作室</title>
+  <style>
+  body {
+    background-color: #f0f4f8;
+    font-family: "微软雅黑", Arial;
+  }
+  h1 {
+    color: #1a5276;
+    text-align: center;
+  }
+  h2 {
+    color: #2980b9;
+  }
+  a {
+    color: #37b1cf;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #e67e22;
+  }
+  </style>
+</head>
+<body>
+  <h1>桐乡圆通工作台导航</h1>
+  <p>每天进步一点点</p>
+  <h2>搜索</h2>
+<input type="text" id="searchBox" placeholder="输入想搜的内容">
+<button onclick="search()">百度一下</button>
+  <h2>常用网址</h2>
+<ul>
+  <li><a href="https://www.baidu.com">百度搜索</a></li>
+  <li><a href="https://xzzx.yto56.com.cn">圆通下载中心</a></li>
+</ul>
+  <h2>工作网址</h2>
+<ul>
+  <li><a href="http://10.202.110.253:8080">秋实路圆通网关</a></li>
+</ul>
+<script>
+function search() {
+  var keyword = document.getElementById("searchBox").value;
+  window.open("https://www.baidu.com/s?wd=" + keyword);
+}
+</script>
+</body>
+</html>
